@@ -1,0 +1,15 @@
+#Importar base de datos
+#Edad:
+barplot(table(Covid$`Edad (años cumplidos)), xlab = "Edades", ylab = "frecuencia", main = "Rangos de edades", col = "steelblue")
+#Ocupacion:
+barplot(table(Covid$Ocupación), xlab = "No trabaja          Empleado", ylab = "cantidad", main = "Covid-19 Ocupación", col = "steelblue")
+#Cuarentena:
+barplot(table(Covid$`Se encuentra en cuarentena`), xlab = "Si= 1  Parcialmente= 2  No= 3", ylab = "Frecuencia", main = "Covid-19 Cuarentena", col = "steelblue")
+#Cuarentena/compañía
+barplot(table(Covid$`Usted se encuentra`), xlab = "Solo= 1    Con familiares= 2    Con amgigos= 3", ylab = "Frecuencia", main = "Covid-19 Cuarentena/compañía", col = "steelblue")
+#Estado civil
+barplot(table(Covid$`Estado civil`), xlab = "Soltero/a= 1    Casado/a= 2    Unión libre= 3   Divorciado/a= 4   Viudo/a= 5  Separado/a= 6", ylab = "Frecuencia", main = "Covid-19 Estado civil", col = "steelblue")
+#Embarazadas
+barplot(table(Covid$`Está usted embarazada`), xlab = "No= 1    Si= 2", ylab = "Mujeres embarazadas", main = "Covid-19 Emabarazadas", col = "steelblue")
+#Escolaridad
+barplot(table(Covid$Escolaridad), xlab = "Sin escolaridad= 1    Preescolar= 2  Primaria= 3  Secundaria= 4  Preparatoria= 5 Licenciatura= 6 Especialidad= 7 Maestría= 8 Doctorado= 9", ylab = "Frecuencia", main = "Covid-19 Escolaridad", col = "steelblue")
